@@ -1,0 +1,410 @@
+{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Roberto Jr.</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer, Data Engineer, Dungeon Master"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I'm a former medical academic, now an AWS certified IT student. My journey in software development and engineering started not long ago, and I'm very excited for what's up ahead. I'm eager to tackle great challenges and collaborate with great people in order to give life to correct, well-designed, and stylistic applications.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='assets/img/profile-img.jpg') }}" class="img-fluid" alt="Profile image">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Jr. Python Developer &amp; Data Engineer.</h3>
+            <p class="fst-italic">
+              Get to know me a little bit more - here is some info.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 October</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>github.com/RobertoLJr</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Salvador, Brazil</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gsn.roberto@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Unavailable (yet!)</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Feel free to reach me through my socials to share resources and insights about software development, data engineering, Dungeons &amp Dragons, gaming, miniature paintings and craftings, and other fun stuff.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Here are some metrics from the start of my professional journey :)</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-github"></i>
+              <span data-purecounter-start="0" data-purecounter-end="158" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total GitHub Commits (2024)</strong> pushes</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-check"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Udemy Courses</strong> completed</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="1">
+            <div class="count-box">
+              <i class="bi bi-patch-check"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Certifications</strong> achieved</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Years of Professional Experience</strong> and going up.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>These are my current skills and an approximate estimation of how comfortable I am while dealing with them.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL (MySQL, PostgreSQL, SQLite) <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">AWS <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Apache Hadoop <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Git/GitHub <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java/Kotlin <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Here is a summary of my current education/professional status.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Roberto Jr.</h4>
+              <p><em>Forward-thinking, reliable, and deadline-driven software developer in the making.</em></p>
+              <ul>
+                <li>Salvador, Bahia, BR</li>
+                <li>gsn.roberto@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Systems Analysis and Development</h4>
+              <h5>2023 - Present</h5>
+              <p><em>Universidade Salvador - UNIFACS, BA</em></p>
+              <p>Associate degree in computer systems' analysis and software development.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>AWS Data Engineering Intern</h4>
+              <h5>2023 - 2023</h5>
+              <p><em>Compass.UOL, Porto Alegre, RS (remote)</em></p>
+              <ul>
+                <li>Applied best practices of data engineering under supervision, with great technical and behavioural feedback.</li>
+                <li>Implemented ETL processes back-to-back within the AWS environment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Here are some projects I developed while taking the 100 Days of Python bootcamp from Udemy, designed by Angela Yu.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-automation">Automation</li>
+              <li data-filter=".filter-data">Data</li>
+              <li data-filter=".filter-game">Game</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-automation">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Automation 1"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-032-project-automated-birthday-wisher" target ="_blank" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-automation">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Automation 2"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-033-project-iss-overhead-notifier" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-automation">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Automation 3"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-035-project-rain-alert-telegram-notification" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Game 1"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-011-project-blackjack" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Game 2"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-023-project-turtle-crossing-game" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Game 3"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-024-extra-project-snake-game-v2" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data 1"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-074-project-LEGO-dataset-analysis" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data 2"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-075-project-google-trends-data" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename='assets/img/portfolio/portfolio-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data 3"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RobertoLJr/100-days-of-python/tree/main/day-080-project-t-tests-and-distribution" target ="_blank"  title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Future Projects</h2>
+          <p>Here is a compilation of technologies, fields of study, and resources that I intend to invest some time in the near future to learn and apply.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-browser-chrome"></i></div>
+            <h4 class="title">Web Design &amp Development</h4>
+            <p class="description">Front and Backend concepts and techniques for web development.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-phone"></i></div>
+            <h4 class="title">Mobile Development</h4>
+            <p class="description">Mobile Development with Kotlin/Swift and/or Flutter for a more versatile approach.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-robot"></i></div>
+            <h4 class="title">Machine Learning</h4>
+            <p class="description">Design and creation of machine learning models.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-controller"></i></div>
+            <h4 class="title">Game Development</h4>
+            <p class="description">Usage of game and modeling engines, such as Unity, Unreal, and Blender, as a fun side gig.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Want to send a message? Fill the form below (or reach me out through my socials) and I'll receive an email directly from you.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Salvador, Bahia, Brazil</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>gsn.roberto@gmail.com</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d809.9750292370803!2d139.557087969637!3d35.70407548731979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQyJzE0LjciTiAxMznCsDMzJzI3LjgiRQ!5e0!3m2!1spt-BR!2sbr!4v1707921410015!5m2!1spt-BR!2sbr" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+{% include "footer.html" %}
