@@ -17,7 +17,7 @@ added upon hosting the website somewhere, which might happen in the near future.
 - [Flask Bootstrap](https://pythonhosted.org/Flask-Bootstrap/)
 - [Flask CKEditor](https://flask-ckeditor.readthedocs.io/en/latest/)
 - [FlaskWTF](https://flask-wtf.readthedocs.io/en/1.2.x/) - Integration of Flask and WTForms.
-- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - The Flask web application framework uses Jinja templates by default. 
+- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - The Flask web application framework uses Jinja templates by default.
 - [WTForms](https://wtforms.readthedocs.io/en/3.1.x/)
 
 ### Miscellanea
